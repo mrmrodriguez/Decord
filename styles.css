@@ -1,0 +1,979 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #fff;
+  color: #000;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* ____________GENERAL_____________ */
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1150px;
+  margin: auto;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  width: 185px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* ____________SHIPPING BANNERS_____________ */
+#shipping-banner {
+  background-color: #222;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  line-height: 29px;
+}
+  
+#shipping-banner a {
+  color: #fff;
+}
+
+.col:first-child {
+  border-right: 1px solid #fff;
+}
+
+/* ______________NAVBARS_________________ */
+.mobile-logo {
+  display: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.side-links {
+  padding: 30px 50px;
+}
+
+.logo {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.top-nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-nav ul li {
+  padding: 0 10px;
+}
+
+nav ul li a {
+  padding-bottom: 2px;
+  border: 1px solid transparent;
+}
+
+.top-nav ul .top-nav {
+  flex: 1;
+  margin-left: 20px;
+}
+
+nav {
+  height: 40px;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-top: 50px;
+}
+
+nav .nav-btn {
+  display: none;
+}
+
+nav .nav-links {
+  display: inline;
+}
+
+nav .nav-links a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+}
+
+nav .nav-links a:hover {
+  font-weight: 900;
+}
+
+nav #nav-check {
+  display: none;
+}
+
+
+/* ______________SHOWCASE_________________ */
+.showcase {
+  width: 100%;
+  height: 525px;
+  background: url('img/main-background.svg') no-repeat right top/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 50px;
+  margin-top: 90px;
+  margin-bottom: 20px;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.showcase p, .showcase h2 {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.showcase p {
+  margin-top: 50px;
+  font-size: 2em;
+}
+
+.showcase h2 {
+  font-size: 5em;
+  transform: scaleY(1.2);
+}
+
+.showcase .btn {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+/* ______________SHOE SALE_________________ */
+.shoe-sale {
+  width: 100%;
+  height: 450px;
+  background: url('img/shoe-sale.svg') no-repeat center bottom/cover;
+  color: #fff;
+  text-align: center;
+  margin-top: 75px;
+  text-transform: uppercase;
+}
+
+.shoe-sale .content {
+  width: 100%;
+}
+
+.shoe-sale p {
+  font-size: 28px;
+  padding-top: 40px;
+}
+
+.shoe-sale h2 {
+  font-size: 50px;
+  transform: scaleY(1.2);
+  letter-spacing: 2px;
+}
+
+.shoe-sale .btn {
+  font-size: 24px;
+  background: transparent;
+  margin: -10px auto;
+  padding-right: 300px;
+  display: block;
+}
+
+/* ______________CATEGORIES_________________ */
+.category-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.category-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 20px;
+  margin-top: 50px;
+  margin-bottom: 0;
+  text-align: center;
+  line-height: 0;
+}
+
+#category-list p {
+  background-color: #000;
+  color: #fff;
+  padding: 25px 0;
+  margin: auto;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 315px;
+}
+
+/* ______________JEWELRY SALE BANNER_________________ */
+#sale-banner {
+  width: 100%;
+  height: 450px;
+  background: url('img/jewelry-sale-background3.svg') no-repeat right top/cover;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #fff;
+  line-height: 75px;
+}
+
+#sale-banner .sale-content {
+  width: 100%;
+  padding: 20px 0 0 550px;
+}
+
+#sale-banner p, #sale-banner h2 {
+  text-transform: uppercase;
+  align-self: flex-end;
+}
+
+#sale-banner p {
+  margin-top: 50px;
+  margin-bottom: -20px;
+  font-size: 23px;
+}
+
+#sale-banner h2 {
+  font-size: 50px;
+  transform: scaleY(1.2);
+}
+
+#sale-banner .btn {
+  margin-top: 10px;
+  font-size: 22px;
+  padding: 0;
+  width: 230px;
+  background-color: rgba(255,255,255,0.3);
+}
+
+#sale-banner .btn:hover {
+  background-color: rgba(255,255,255,0.7);
+  color: rgb(236, 90, 114);
+}
+
+/* ______________FAVORITES_________________ */
+#favorites h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 75px;
+  text-transform: uppercase;
+}
+
+#favorites hr {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.swiper-container {
+  width: 1150px;
+  height: 550px;
+  margin-top: 30px;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  width: 25%;
+}
+
+.swiper-slide img {
+  height: 400px;
+  width: 275px;
+}
+
+.swiper-slide p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #222;
+  margin-top: 5px !important;
+}
+
+p.price {
+font-size: 14px;
+}
+
+span.sale {
+  color: #B10612;
+}
+  
+span.regular {
+  text-decoration: line-through;
+  margin-right: 15px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  position: relative;
+  outline: none;
+}
+
+.swiper-button-prev {
+  left: 100px;
+  bottom: 350px;
+  color: black;
+}
+
+.swiper-button-next {
+  left: 1400px;
+  bottom: 365px;
+  color: black;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: black;
+}
+
+/* ______________STATEMENT_________________ */
+#statement {
+  color: #444;
+  font-size: 12px;
+  text-align: justify;
+  line-height: 1.7;
+  margin: 50px 0;
+}
+
+#statement hr {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#statement span {
+  font-weight: 600;
+}
+
+/* _________ABOUT_________ */
+.about {
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  padding: 35px 0;
+}
+
+.about-inner {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap : 75px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.about li {
+  line-height: 2.8;
+  font-family: 'Montserrat', sans-serif;
+  width: 200px;
+}
+
+.about h6 {
+  text-transform: uppercase;
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.about a {
+  color: #fff;
+}
+
+.about input {
+  width: 100px;
+  background-color: #000;
+  height: 34px;
+  padding: 0 5px;
+  border: 1px solid #fff;
+  margin-top: 5px;
+}
+
+.about input[type=text]:focus {
+  background-color: rgba(255,255,255,0.7);
+}
+
+.about input::placeholder {
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: #222;
+}
+
+input:focus:-moz-placeholder {
+  color: #222;
+}
+
+input:focus::-moz-placeholder {
+  color: #222;
+}
+input:focus:-ms-input-placeholder {
+  color: #222;
+}
+
+.about a.btn {
+  padding: 0;
+  display: inline-block;
+  color: #000;
+  background-color: #fff;
+  width: 75px;
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 10px;
+  border-bottom: .5px solid #fff;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.about .border {
+  border-bottom: 1px solid #fff;
+}
+
+.help {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 300px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50px;
+  font-size: 20px;
+}
+
+.social-links ul {
+  display: flex;
+  width: 500px;
+}
+
+.social-links i {
+  padding: 0 12px;
+}
+
+.fab.fa-facebook-f {
+  padding-left: 0;
+}
+
+footer {
+  text-align: center;
+  background: #000;
+  color: #fff;
+}
+
+.mobile-copyright {
+  display: none;
+}
+
+/* ______________MEDIA QUERIES_________________ */
+@media(max-width: 768px) {
+  #shipping-banner {
+    position: relative;
+    display: block;
+    font-size: 12px;
+    line-height: 25px;
+    padding: 10px;
+    margin-top: 75px;
+  }
+  
+  .col:first-child {
+    border-right: none;
+  }
+    
+  .mobile-logo {
+    display: block;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+
+  .top-nav {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: inline-block;
+  }
+
+  .mobile-nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobile-nav ul li i {
+    font-size: 25px;
+    padding: 0 20px;
+  }
+
+  ul.mobile-menu {
+    padding: 0;
+  }
+
+  nav {
+    margin-top: 25px;
+  }
+
+  nav .nav-btn {
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+    margin: -13px;
+  }
+
+  nav .nav-btn label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    cursor: pointer;
+  }
+
+  nav .nav-btn label span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    margin-left: 15px;
+    border-top: 4px solid #000;
+  }
+
+  nav .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    padding: 0 40px;
+    text-align: left;
+    background-color: #fff;
+    z-index: 999;
+  }
+  
+  nav .nav-links a {
+    display: block;
+    width: 100%;
+    border-bottom: 0.5px solid #222;
+    padding: 20px 0;
+  }
+
+  nav #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+
+  nav #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+  /* SHOWCASE */
+  .showcase {
+    background: url('img/dark-main-background.svg') no-repeat right top/cover;
+    margin-top: -40px;
+  }
+
+  .showcase h2 {
+    margin-bottom: 0;
+    font-size: 3em;
+    line-height: 1.2;
+  }
+
+  .showcase p {
+    margin-top: 0;
+  }
+
+  .showcase .btn {
+    background-color: rgba(255,255,255,0.3);
+  }
+
+  /* SHOE SALE */
+  .shoe-sale {
+    width: 100%;
+    height: 350px;
+    background: none;
+    background-color: #B10612;
+    color: #fff;
+    text-align: center;
+    margin-top: -30px;
+    text-transform: uppercase;
+  }
+
+  .shoe-sale .shoe-content {
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  .shoe-sale p {
+    font-size: 28px;
+  }
+
+  .shoe-sale h2 {
+    font-size: 40px;
+    transform: scaleY(1.2);
+    letter-spacing: 2px;
+  }
+
+  .shoe-sale .btn {
+    font-size: 24px;
+    background: transparent;
+    padding-right: 300px;
+    display: block;
+  }
+
+  .category-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .category-cards img {
+    width: 250px;
+    height: 375px;
+  }
+
+  #category-list p {
+    width: 250px;
+  }
+
+  /* JEWELRY SALE BANNER */
+  #sale-banner {
+    height: 350px;
+    background: none;
+    background-color: #E73457;
+  }
+
+  #sale-banner .sale-content {
+    padding: 5px 0;
+  }
+
+  #sale-banner p {
+    margin: 0;
+  }
+
+  /* SWIPER */
+  .swiper-container img {
+    margin-bottom: 25px;
+  }
+
+  .swiper-container-horizontal>.swiper-pagination-bullets {
+    bottom: 65px;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height:100%;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
+  #statement {
+    margin: 50px 15px;
+  }
+
+  /* ABOUT */
+  .about .about-inner {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+
+  .about-inner {
+    grid-gap: 0;
+  }
+
+  .about li {
+    width: 400px;
+  }
+
+  .about hr {
+    display: none;
+  }
+
+  .about input {
+    width: 130px;
+    height: 37px;
+  }
+
+  .about a.btn {
+    padding: 0;
+    display: inline-block;
+    color: #000;
+    background-color: #fff;
+    width: 75px;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 10px;
+    border-bottom: .5px solid #fff;
+    font-family: 'Fjalla One', sans-serif;
+  }
+
+  .social {
+    margin-left: 20px;
+  }
+
+  .help {
+    border-top: none;
+  }
+
+  .about h6 {
+    border-bottom: 1px solid #fff;
+  }
+
+  .about .border {
+    border-bottom: 0 none;
+  }
+
+  .collapsible {
+    color: white;
+    cursor: pointer;
+    padding: 25px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #000;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    margin-top: -50px;
+    font-size: 25px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .copyright {
+    display: none;
+  }
+}
+
+
+@media(max-width: 500px) {
+  .showcase p {
+    font-size: 22px;
+  }
+
+  .showcase h2 {
+    font-size: 2.5em;
+  }
+
+  .showcase .btn {
+    background-color: rgba(255,255,255,0.7);
+    color: #333;
+  }
+
+  .shoe-sale {
+    height: 300px;
+  }
+
+  .shoe-sale .shoe-content {
+    padding-top: 20px;
+  }
+
+  .shoe-sale p {
+    font-size: 20px;
+  }
+
+  .shoe-sale h2 {
+    font-size: 30px;
+  }
+
+  #sale-banner {
+    height: 250px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    line-height: 45px;
+  }
+
+  #sale-banner p {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+
+  #sale-banner h2 {
+    font-size: 35px;
+  }
+
+  #sale-banner .btn {
+    font-size: 16px;
+    width: 200px;
+  }
+
+  #favorites h1 {
+    font-size: 25px;
+    margin-top: 40px;
+  }
+
+  #favorites hr {
+    width: 200px;
+  }
+
+  .swiper-container {
+    height: 500px;
+    margin-top: 15px;
+  }
+
+  .swiper-slide img {
+    margin-bottom: 15px;
+  }
+
+  .swiper-slide p {
+    width: 200px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #222;
+    margin: 0 auto;
+  }
+
+  p.price {
+    font-size: 14px;
+  }
+
+  span.sale {
+    color: #B10612;
+  }
+    
+  span.regular {
+    text-decoration: line-through;
+    margin-right: 15px;
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    position: relative;
+    outline: none;
+  }
+
+  .swiper-button-prev {
+    left: 100px;
+    bottom: 350px;
+    color: black;
+  }
+
+  .swiper-button-next {
+    left: 1400px;
+    bottom: 365px;
+    color: black;
+  }
+
+  .swiper-container-horizontal>.swiper-pagination-bullets {
+    bottom: 75px;
+  }
+
+  .about {
+    font-size: 12px;
+    padding: 0;
+  }
+
+  .about-inner {
+    padding: 0 5px;
+    grid-gap : 0;
+  }
+
+  .about li {
+    line-height: 2;
+    width: 325px;
+    margin-left: 35px;
+  }
+
+  .about h6 {
+    letter-spacing: 2px;
+  }
+
+  .about hr {
+    display: none;
+  }
+
+  .about input {
+    width: 105px;
+    margin-bottom: 30px;
+  }
+
+  .about input::placeholder {
+    font-size: 13px;
+  }
+
+  .about a.btn {
+    padding: 4.5px;
+    border-bottom: 1px solid #fff;
+  }
+
+  .social h6 {
+    margin-right: 40px;
+  }
+
+  .social-links {
+    margin-bottom: 30px;
+  }
+
+  .social-links i {
+    padding: 0 5px;
+  }
+
+  .collapsible {
+    padding: 15px;
+  }
+}
