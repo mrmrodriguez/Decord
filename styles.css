@@ -415,7 +415,7 @@ span.regular {
 }
 
 .about input {
-  width: 100px;
+  width: 110px;
   background-color: #000;
   height: 34px;
   padding: 0 5px;
@@ -461,14 +461,11 @@ input:focus:-ms-input-placeholder {
   font-family: 'Fjalla One', sans-serif;
 }
 
-.about .border {
-  border-bottom: 1px solid #fff;
-}
-
 .help {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 300px;
+  border-top: 1px solid #fff;
 }
 
 .social-links {
